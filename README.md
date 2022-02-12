@@ -1,16 +1,17 @@
 # Description
 
-OccuSim is a versatile Occupation Simulator for the [AppDaemon](https://github.com/acockburn/appdaemon) Platform.
+OccuSim is a versatile Occupation Simulator for the [AppDaemon](https://github.com/AppDaemon/appdaemon) Platform.
+
+This is a fork of the original [OccuSim](https://github.com/acockburn/occusim), modified to work with [HACS](https://github.com/hacs/integration)
 
 # Installation
 
-## Clone the Repository
+## HACS
+Add this repo to 'Customer Repositories' in HACS.
 
-``` bash
-$ git clone https://github.com/acockburn/occusim.git
-```
+## Manual
 
-Next copy the occusim.py app to your Apps directory (see [AppDaemon docs](https://github.com/acockburn/appdaemon/blob/master/API.md) for more information)
+Download the latest version, and then place the `occusim` directory in `/config/appdaemon/apps/`, so that the full path to `occusim.py` is `/config/appdaemon/apps/occusim/occusim.py`. Once copied, restart the AppDaemon addon.
 
 # Configuration
 
@@ -214,15 +215,6 @@ step_evening_start: 11:00:00
 
 This will allow the office randomisations to occur any time between 45 minutes before sunset and 11pm.
 
-# Updating OccuSim
-
-To update OccuSim after I have released new code, just run the following command to update your copy:
-
-```bash
-$ git pull origin
-```
-
-Then copy occusim.py to your App directory as in the original installation.
 
 # Known Limitations
 
