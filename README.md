@@ -7,7 +7,7 @@ This is a fork of the original [OccuSim](https://github.com/acockburn/occusim), 
 # Installation
 
 ## HACS
-Add this repo to 'Customer Repositories' in HACS.
+Add this repo to 'Custom Repositories' in HACS.
 
 ## Manual
 
@@ -32,7 +32,7 @@ Occupancy Simulator:
 - `log_msg` set this to any value to make `OccuSim` log its scheduled activities
 - `notify` set this to any value to make `OccuSim` send a notification for its scheduled activities
 - `enable` (optional) set to the name of an input boolean, and the value it needs to be to enable `OccuSim`. If omitted, `OccuSim` will always be active.
-- 1select` (optional) set the name of an input select that will have its value checked at execution time. If the current state of the input select matches any of the listed states, occusim will be active. e.g.: `select: input_select.mode,Day,Night`
+- `select` (optional) set the name of an input select that will have its value checked at execution time. If the current state of the input select matches any of the listed states, occusim will be active. e.g.: `select: input_select.mode,Day,Night`
 - `test` (optional) set to "1" to have occusim run, but not activate any lights or scenes. Use with `log_msg` to test settings and times. If set to anything else, or not present, test mode will not be enabled.
 - `dump_times` (optional) set to any value to dump a list of the times events will happen when the app is first initialized and every night at the reset time.
 - `reset_time` (optional) time at which `OccuSim` re-calculates the new set of random times for the day ahead. Defaults to 3am.
